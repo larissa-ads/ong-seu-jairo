@@ -5,77 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ONG Seu Jairo — Início</title>
   <meta name="description" content="ONG Seu Jairo: projetos sociais, voluntariado e doações." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- Cabeçalho -->
-  <header>
-    <div>
-      <img src="imagens/logo.png" alt="Logotipo da ONG Seu Jairo" width="120" />
-    </div>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="Página inicial">
+        <img src="imagens/logo.png" alt="Logotipo da ONG Seu Jairo" width="120" />
+      </a>
 
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="index.html" aria-current="page">Início</a></li>
-        <li><a href="projetos.html">Projetos sociais</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
-    </nav>
+      <input type="checkbox" id="nav-open" class="nav-toggle" aria-label="Abrir menu" />
+      <label for="nav-open" class="hamburger" aria-hidden="true" title="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="menu">
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li><a href="projetos.html">Projetos sociais</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Seção SOBRE A ONG -->
-  <section id="sobre" aria-labelledby="titulo-sobre">
-    <h1 id="titulo-sobre">Sobre a ONG Seu Jairo</h1>
+  <!-- Seção SOBRE -->
+  <main class="container">
+    <section id="sobre">
+      <h1>Sobre a ONG Seu Jairo</h1>
+      <p>
+        A <strong>ONG Seu Jairo</strong> foi criada em homenagem ao senhor <strong>Jair Batista</strong>,
+        carinhosamente conhecido como <em>Seu Jairo</em>. Mesmo enfrentando dificuldades e tendo poucos
+        recursos, ele nunca deixou de estender a mão a quem precisava.
+      </p>
+      <p>
+        Inspirados por seu exemplo de amor e generosidade, fundamos esta ONG com o propósito de
+        <strong>transformar vidas</strong>, promovendo solidariedade e esperança.
+      </p>
+      <p>
+        Nossas ações têm foco na <strong>distribuição de cestas básicas</strong>, no
+        <strong>apoio à educação</strong> e em <strong>projetos ambientais</strong>.
+      </p>
+      <p><strong>Vem com a gente nessa missão de mudar a vida de muitas pessoas!</strong> 💙</p>
+    </section>
 
-    <p>
-      A <strong>ONG Seu Jairo</strong> foi criada em homenagem ao senhor <strong>Jair Batista</strong>,
-      carinhosamente conhecido como <em>Seu Jairo</em>. Ele foi um homem simples, mas de coração imenso —
-      alguém que, mesmo enfrentando dificuldades e tendo poucos recursos, nunca deixou de estender a mão
-      a quem precisava.
-    </p>
-
-    <p>
-      Seu Jairo acreditava que a verdadeira riqueza está em <strong>ajudar o próximo</strong>, e muitas vezes
-      preferia passar necessidade do que ver outra pessoa sofrendo. Inspirados por seu exemplo de amor e
-      generosidade, fundamos esta ONG com o propósito de <strong>transformar vidas</strong>, promovendo
-      solidariedade e esperança.
-    </p>
-
-    <p>
-      Nossas ações têm foco na <strong>distribuição de cestas básicas para famílias carentes</strong>,
-      <strong>apoio à educação</strong> e <strong>projetos voltados ao meio ambiente</strong>,
-      buscando construir um futuro mais justo, consciente e humano.
-    </p>
-
-    <p><strong>Vem com a gente nessa missão de mudar a vida de muitas pessoas!</strong> 💙</p>
-  </section>
-
-  <!-- Seção COMO AJUDAR -->
-  <section id="como-ajudar" aria-labelledby="titulo-ajudar">
-    <h2 id="titulo-ajudar">Como ajudar</h2>
-    <ul>
-      <li>Seja voluntário em nossas ações.</li>
-      <li>Doe alimentos e materiais de higiene.</li>
-      <li>Divulgue nossos projetos nas redes sociais.</li>
-    </ul>
-    <p>
-      <a href="projetos.html">Conheça nossos projetos</a> ou
-      <a href="cadastro.html">cadastre-se</a> para participar.
-    </p>
-  </section>
-
-  <!-- Seção CONTATO -->
-  <section id="contato" aria-labelledby="titulo-contato">
-    <h2 id="titulo-contato">Contato</h2>
-    <address>
-      Rua Exemplo, 123 — Centro — Cidade/UF<br />
-      Telefone: <a href="tel:+550000000000">(00) 0000-0000</a><br />
-      E-mail: <a href="mailto:contato@seujairo.org">contato@seujairo.org</a>
-    </address>
-  </section>
+    <section id="como-ajudar">
+      <h2>Como ajudar</h2>
+      <ul>
+        <li>Seja voluntário nas ações sociais.</li>
+        <li>Doe alimentos e materiais de higiene.</li>
+        <li>Divulgue nossos projetos nas redes sociais.</li>
+      </ul>
+      <p>
+        <a href="projetos.html" class="btn btn-primary">Conheça nossos projetos</a>
+        <a href="cadastro.html" class="btn btn-outline">Cadastre-se</a>
+      </p>
+    </section>
+  </main>
 
   <!-- Rodapé -->
-  <footer>
-    <small>&copy; <time datetime="2025">2025</time> ONG Seu Jairo. Todos os direitos reservados.</small>
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <time datetime="2025">2025</time> ONG Seu Jairo. Todos os direitos reservados.</small>
+    </div>
   </footer>
 </body>
 </html>
