@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ONG Seu Jairo — Cadastro</title>
+  <meta name="description" content="Cadastre-se como voluntário ou doador na ONG Seu Jairo e participe de ações sociais." />
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div>
+      <img src="imagens/logo.png" alt="Logotipo da ONG Seu Jairo" width="120" />
+    </div>
+
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos sociais</a></li>
+        <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção de Cadastro -->
+  <main>
+    <h1>Cadastro de Voluntário ou Doador</h1>
+    <p>Preencha o formulário abaixo para participar das ações da ONG Seu Jairo.</p>
+
+    <form action="#" method="post" aria-describedby="instrucao">
+      <p id="instrucao">Campos marcados com * são obrigatórios.</p>
+
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite seu nome completo" />
+
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" required placeholder="seuemail@email.com" />
+
+        <label for="cpf">CPF *</label>
+        <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" placeholder="000.000.000-00" />
+
+        <label for="telefone">Telefone *</label>
+        <input type="tel" id="telefone" name="telefone" required pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}" placeholder="(00) 00000-0000" />
+
+        <label for="nascimento">Data de nascimento *</label>
+        <input type="date" id="nascimento" name="nascimento" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Interesse de Participação</legend>
+
+        <label for="tipo">Quero participar como *</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecione</option>
+          <option value="voluntario">Voluntário(a)</option>
+          <option value="doador">Doador(a)</option>
+          <option value="parceiro">Parceiro(a)</option>
+        </select>
+
+        <p>Áreas de interesse *</p>
+        <label><input type="checkbox" name="area" value="cestas" required /> Cestas do Bem</label><br>
+        <label><input type="checkbox" name="area" value="educacao" /> Educação</label><br>
+        <label><input type="checkbox" name="area" value="meio-ambiente" /> Meio Ambiente</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Mensagem</legend>
+        <label for="mensagem">Conte um pouco sobre você (opcional)</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Consentimento</legend>
+        <label>
+          <input type="checkbox" name="lgpd" required />
+          Autorizo o uso dos meus dados para contato sobre atividades da ONG. *
+        </label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <small>&copy; <time datetime="2025">2025</time> ONG Seu Jairo. Todos os direitos reservados.</small>
+  </footer>
+</body>
+</html>
